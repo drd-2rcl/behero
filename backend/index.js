@@ -1,5 +1,9 @@
-const express = require('express');
+const express = require("express");
 
 const app = express();
 
-app.listen(3333)
+app.get("/", (req, res) => {
+  return res.json({ msg: "Hi" });
+});
+
+app.listen(3333);
