@@ -1,7 +1,9 @@
 import React from "react";
+import Logon from "./pages/Logon";
+import "./global.css";
 
-function App() {
-  return <h1>Hi</h1>;
-}
+const App = () => {
+  return <Logon />;
+};
 
 export default App;
