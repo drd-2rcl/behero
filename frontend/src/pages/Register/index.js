@@ -18,10 +18,21 @@ export default function Register() {
           </p>
           <Link className="back-link" to="/">
             <FiArrowLeft size={16} color="#E02041" />
-            Não tenho cadastro
+            Tenho cadastro
           </Link>
         </section>
-        <form action=""></form>
+        <form action="">
+          <input placeholder="Nome da ONG" />
+          <input type="email" placeholder="Email" />
+          <input placeholder="WhatsApp" />
+          <div className="input-group">
+            <input placeholder="Cidade" />
+            <input placeholder="UF" style={{ width: 80 }} />
+          </div>
+          <button className="button" type="submit">
+            Cadastrar
+          </button>
+        </form>
       </div>
     </div>
   );
