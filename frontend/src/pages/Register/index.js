@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 
+import logoImg from "../../assets/logo.svg";
 import api from "../../services/api";
 import "./styles.css";
-import logoImg from "../../assets/logo.svg";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -27,7 +27,6 @@ export default function Register() {
 
     try {
       const response = await api.post("ongs", data);
-      console.log(response);
       alert(`Seu ID de acesso: ${response.data.id}`);
       history.push("/");
     } catch (error) {
